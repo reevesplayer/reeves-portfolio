@@ -15,7 +15,7 @@ const NavBar = () => {
   return (
     <Navbar>
       <NavbarBrand>
-        <img src={logoSrc} alt="Logo" className="" />
+        <img src={logoSrc} alt="Logo" className="hidden" />
       </NavbarBrand>
       <NavbarContent justify="end">
         <NavbarItem>

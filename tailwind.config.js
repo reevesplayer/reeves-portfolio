@@ -20,7 +20,7 @@ module.exports = {
             background: "#080809",
             foreground: "#101010",
             primary: {
-              50: "#3B096C",
+              50:  "#3B096C",
               100: "#FFFBDD",
               200: "#FFF5BC",
               300: "#FFEF9B",
