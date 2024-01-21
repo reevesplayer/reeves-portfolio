@@ -23,7 +23,6 @@ export const ThemeSwitcher = () => {
       endContent={<MoonIcon />}
       onChange={toggleTheme}
     >
-      Dark mode
     </Switch>
   );
 };

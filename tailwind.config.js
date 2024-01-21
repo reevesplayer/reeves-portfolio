@@ -16,74 +16,52 @@ module.exports = {
       themes: {
         "darkmode": {
           extend: "dark",
-          colors: {
-            background: "#080809",
-            foreground: "#101010",
-            primary: {
-              50:  "#3B096C",
-              100: "#FFFBDD",
-              200: "#FFF5BC",
-              300: "#FFEF9B",
-              400: "#FFE882",
-              500: "#FFDE59",
-              600: "#DBB941",
-              700: "#B7962C",
-              800: "#93741C",
-              900: "#7A5C11",
-              DEFAULT: "#FFDE59",
-              foreground: "#ffffff",
-            },
-            focus: "#F182F6",
+          backgroundColor: {
+            transparent: 'transparent',
           },
-          layout: {
-            disabledOpacity: "0.3",
-            radius: {
-              small: "4px",
-              medium: "6px",
-              large: "8px",
+          colors: {
+            background: "#070707",      // Dark background
+            foreground: "#FFFFFF",      // White foreground
+            primary: {
+              50: "#F0F0F0",            // Light gray variant
+              100: "#E0E0E0",
+              200: "#C0C0C0",
+              300: "#A0A0A0",
+              400: "#808080",
+              500: "#666666",
+              600: "#4D4D4D",
+              700: "#333333",
+              800: "#1A1A1A",
+              900: "#000000",            // Black variant
+              DEFAULT: "#F0F0F0",       // Default light gray color
+              foreground: "#000000",
             },
-            borderWidth: {
-              small: "1px",
-              medium: "2px",
-              large: "3px",
-            },
+            focus: "#FFFFFF",           // White focus color
           },
         },
         "lightmode": {
           colors: {
-            background: "#F6F6F6",  // Light gray background
-            foreground: "#333333",  // Dark gray foreground
+            background: "#F6F6F6",      // Light gray background
+            foreground: "#333333",      // Dark gray foreground
             primary: {
-              50: "#F0F7FF",         // Light blue variant
-              100: "#DDEBFF",
-              200: "#B7D4FF",
-              300: "#8DB1FF",
-              400: "#5F87FF",
-              500: "#3653EB",        // Main blue color
-              600: "#1D2BBF",
-              700: "#0D1A8C",
-              800: "#051063",
-              900: "#02023A",
-              DEFAULT: "#3653EB",    // Default primary color
+              50: "#FFFFFF",            // White variant
+              100: "#F0F0F0",
+              200: "#E0E0E0",
+              300: "#C0C0C0",
+              400: "#A0A0A0",
+              500: "#808080",
+              600: "#666666",
+              700: "#4D4D4D",
+              800: "#333333",
+              900: "#1A1A1A",            // Dark gray variant
+              DEFAULT: "#101010",       // Default white color
               foreground: "#333333",
             },
-            focus: "#0096FD",        // Light blue focus color
-          },
-          layout: {
-            disabledOpacity: "0.3",
-            radius: {
-              small: "4px",
-              medium: "6px",
-              large: "8px",
-            },
-            borderWidth: {
-              small: "1px",
-              medium: "2px",
-              large: "3px",
-            },
+            focus: "#FFFFFF",           // White focus color
           },
         },
-      },
+      }
+      
     }),
   ],
 };
