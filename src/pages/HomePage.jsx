@@ -7,15 +7,14 @@ import { useEffect } from "react";
 import backgroundDark from "../components/background-dark.png";
 import backgroundLight from "../components/background-light.png";
 import useDarkMode from "use-dark-mode";
+import { Link } from 'react-router-dom';
 
 const HomePage = () => {
   const darkMode = useDarkMode(false);
 
   useEffect(() => {
-    // Add 'overflow-hidden' class to body when the component mounts
     document.body.classList.add('overflow-hidden');
 
-    // Remove 'overflow-hidden' class when the component unmounts
     return () => {
       document.body.classList.remove('overflow-hidden');
     };
@@ -25,13 +24,13 @@ const HomePage = () => {
 
   return (
     <div
-      className="h-screen flex justify-center pt-24"
+      className="flex justify-center pt-24"
       style={{
-        height: "100vh", // Fallback value
-        backgroundImage: `url(${backgroundImage})`, // Set background image
-        backgroundSize: "cover", // Adjust to your needs
-        backgroundPosition: "center", // Adjust to your needs
-        backgroundRepeat: "no-repeat", // Adjust to your needs
+        height: "100vh",
+        backgroundImage: `url(${backgroundImage})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
       }}
     >
       <div className="w-3/5 flex flex-col">
@@ -45,9 +44,11 @@ const HomePage = () => {
           modern web technologies and frameworks. I specialize in building
           fast, responsive, and accessible applications available to all.
         </p>
-        <Button color="primary" className="w-2/12 mx-auto mt-10">
-          <span className="text-base font-semibold">Explore</span>
-        </Button>
+        <Link to="/about">
+          <Button color="primary" className="w-2/12 mx-auto mt-4">
+            <span className="text-base font-semibold">About Me</span>
+          </Button>
+        </Link>
         <div className="flex mt-20 mx-auto">
           <FaGithubSquare className="mx-8 size-8" />
           <FaLinkedin className="mx-8 size-8" />

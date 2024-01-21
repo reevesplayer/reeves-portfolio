@@ -11,7 +11,7 @@ const TopBar = () => {
   const logoSrc = darkMode.value ? darkLogo : lightLogo;
 
   return (
-    <div className="flex justify-between items-center py-7 px-20">
+    <div className="flex justify-between items-center py-7 px-28">
       <div>
         <img src={logoSrc} alt="Logo" className="w-auto" />
       </div>
