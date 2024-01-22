@@ -2,7 +2,6 @@ import React from 'react'
 import {Card, CardBody, Image, Chip, Link} from "@nextui-org/react"
 import project1 from "../components/project-1.png";
 import placeHolder from "../components/coding.png";
-import { FaGithubSquare, FaLinkedin, FaFacebookSquare } from "react-icons/fa";
 
 const Projects = () => {
   return (
@@ -21,6 +20,7 @@ const Projects = () => {
         </div>
         
         <Card
+            isBlurred
             className="my-5 py-5 px-3"
         >
         <CardBody>
@@ -69,6 +69,7 @@ const Projects = () => {
         </Card>
 
         <Card
+            isBlurred
             className="my-5 py-5 px-3"
         >
         <CardBody>
@@ -117,6 +118,7 @@ const Projects = () => {
         </Card>
 
         <Card
+            isBlurred
             className="my-5 py-5 px-3"
         >
         <CardBody>

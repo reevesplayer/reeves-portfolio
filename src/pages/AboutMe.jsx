@@ -1,6 +1,5 @@
 import React from "react";
-import { FaGithubSquare, FaLinkedin, FaFacebookSquare } from "react-icons/fa";
-import { FaSquareXTwitter } from "react-icons/fa6";
+import { FaGithubSquare, FaLinkedin, FaFacebookSquare, FaInstagramSquare } from "react-icons/fa";
 import CodingSVG from "../components/avatar.png";
 import backgroundDark from "../components/background-dark.png";
 import backgroundLight from "../components/background-light.png";
@@ -56,10 +55,18 @@ const AboutMe = () => {
         </div>
 
         <div className="flex mt-10">
-          <FaGithubSquare className="mr-8 size-8" />
-          <FaLinkedin className="mr-8 size-8" />
-          <FaSquareXTwitter className="mr-8 size-8" />
-          <FaFacebookSquare className="mr-8 size-8" />
+          <Link href="https://github.com/reevesplayer">
+            <FaGithubSquare className="mr-8 size-8" />
+          </Link>
+          <Link href="https://www.linkedin.com/in/reeves-player/">
+            <FaLinkedin className="mr-8 size-8" />
+          </Link>
+          <Link href="https://www.instagram.com/reevesplayer/">
+            <FaInstagramSquare className="mr-8 size-8" />
+          </Link>
+          <Link href="https://www.facebook.com/profile.php?id=100008133975170">
+            <FaFacebookSquare className="mr-8 size-8" />
+          </Link>
         </div>
       </div>
 

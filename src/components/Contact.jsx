@@ -5,7 +5,7 @@ const Contact = () => {
 
   return (
     <div>
-        <Card>
+        <Card isBlurred>
             <CardBody>
                 <div className='flex items-center justify-center py-5'>
                     <Input
@@ -32,7 +32,7 @@ const Contact = () => {
                     />
                 </div>
                 <div className='flex items-center justify-center py-5'>
-                    <Link href="">
+                    <Link to="/thankyou">
                         <Button color="primary" className="w-full">
                             SUBMIT
                         </Button>

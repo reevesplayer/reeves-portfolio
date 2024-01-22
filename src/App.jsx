@@ -7,6 +7,7 @@ import useDarkMode from 'use-dark-mode';
 import { NextUIProvider } from '@nextui-org/react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import AboutMe from './pages/AboutMe';
+import NotFound from './pages/NotFound';
 
 function App() {
   const darkMode = useDarkMode(false);
@@ -21,6 +22,7 @@ function App() {
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/about" element={<AboutMe />} />
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </div>
       </Router>
