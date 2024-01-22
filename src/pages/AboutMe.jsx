@@ -5,9 +5,7 @@ import CodingSVG from "../components/avatar.png";
 import backgroundDark from "../components/background-dark.png";
 import backgroundLight from "../components/background-light.png";
 import useDarkMode from "use-dark-mode";
-import {Card, CardBody, Image, Chip, Link} from "@nextui-org/react"
-import project1 from "../components/project-1.png";
-import placeHolder from "../components/coding.png";
+import { Link } from "@nextui-org/react"
 import Contact from "../components/Contact";
 import Projects from "../components/Projects";
 import Tools from "../components/Tools";
@@ -16,6 +14,7 @@ import Tools from "../components/Tools";
 const AboutMe = () => {
   const darkMode = useDarkMode(false);
   const backgroundImage = darkMode.value ? backgroundDark : backgroundLight;
+  
 
   return (
     <div
@@ -40,13 +39,23 @@ const AboutMe = () => {
           modern web technologies and frameworks. I specialize in building
           fast, responsive, and accessible applications available to all.
         </p>
-        <div className="">
-          <h4 className="my-3">01 ━━━━━ ABOUT ME</h4>
-          <h4 className="my-3">01 ━━━━━ TOOLS & PLATFORMS</h4>
-          <h4 className="my-3">01 ━━━━━ EXPERIENCE</h4>
-          <h4 className="my-3">01 ━━━━━ PROJECTS</h4>
+
+        <div className="tracking-wider flex flex-col">
+          <Link href="#about" color="primary" className="text-primary">
+            <h4 className="my-3">01 <span className=" tracking-tight" >━━━</span> ABOUT ME</h4>
+          </Link>
+          <Link href="#tools" color="primary" className="text-primary">
+            <h4 className="my-3">02 <span className=" tracking-tight">━━━</span> TOOLS & PLATFORMS</h4>
+          </Link>
+          <Link href="#projects" color="primary" className="text-primary">
+            <h4 className="my-3">03 <span className=" tracking-tight">━━━</span> PROJECTS</h4>
+          </Link>
+          <Link href="#contact" color="primary" className="text-primary">
+            <h4 className="my-3">04 <span className=" tracking-tight">━━━</span> CONTACT</h4>
+          </Link>
         </div>
-        <div className="flex mt-16">
+
+        <div className="flex mt-10">
           <FaGithubSquare className="mr-8 size-8" />
           <FaLinkedin className="mr-8 size-8" />
           <FaSquareXTwitter className="mr-8 size-8" />
@@ -58,7 +67,7 @@ const AboutMe = () => {
       <div className="w-1/2 overflow-auto bg-transparent px-20">
           <div className="pr-8 text-primary mb-8 flex items-center">
             <div>
-              <h1 className="text-2xl font-semibold mb-2">About Me</h1>
+              <h1 className="text-2xl font-semibold mb-2" id="about">About Me</h1>
               <p className="text-lg leading-9">Keeping it real all day every day. Doing what I can, when I can, the best that I can do it.</p>
             </div>
           </div>
@@ -135,11 +144,15 @@ const AboutMe = () => {
             </div>
           </div>
 
-          <Tools />
+          <div id="tools">
+            <Tools />
+          </div>
 
-          <Projects />
+          <div id="projects">
+            <Projects />
+          </div>
 
-          <div className="mb-7">
+          <div className="mb-7" id="contact">
             <h1 className="text-2xl font-semibold mb-2">Contact Me</h1>
             <Contact />
           </div>
