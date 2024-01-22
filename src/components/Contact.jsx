@@ -13,27 +13,27 @@ const Contact = () => {
                         label="Name"
                         variant="bordered"
                         placeholder="Enter your name"
-                        className="max-w-xs px-5"
+                        className=" px-5"
                     /> 
                     <Input
                         type="name"
                         label="Name"
                         variant="bordered"
                         placeholder="Enter your name"
-                        className="max-w-xs px-5"
+                        className=" px-5"
                     /> 
                 </div>
                 <div className='flex items-center justify-center py-5'>
                     <Textarea 
                         label="Message"
                         placeholder="Enter your message"
-                        className="max-w-xs w-full"
+                        className="px-5 w-full"
                         variant='bordered'
                     />
                 </div>
                 <div className='flex items-center justify-center py-5'>
                     <Link href="">
-                        <Button color="primary">
+                        <Button color="primary" className="w-full">
                             SUBMIT
                         </Button>
                     </Link>
