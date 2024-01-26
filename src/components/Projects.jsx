@@ -14,7 +14,7 @@ const Projects = () => {
             <Link href="https://test.com"
             isExternal
             >
-            <h1 className="text-md font-light mb-2">View Resume →</h1>
+            <h1 className="text-md font-light mb-2 text-primary-400">View Resume →</h1>
             </Link>
         </div>
         </div>
@@ -55,7 +55,7 @@ const Projects = () => {
             </div>
             <div className="col-span-6 md:col-span-8">
                 <h3 className="text-xl font-semibold tracking-wide">Internship Application Tracker</h3>
-                <p className="text-primary text-md italic mb-5">
+                <p className="text-primary-400 text-md italic mb-5">
                 Application Tracker
                 </p>
                 <p className="text-primary text-md">
@@ -104,7 +104,7 @@ const Projects = () => {
             </div>
             <div className="col-span-6 md:col-span-8">
                 <h3 className="text-xl font-semibold tracking-wide">Sample Project</h3>
-                <p className="text-primary text-md italic mb-5">
+                <p className="text-primary-400 text-md italic mb-5">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 </p>
                 <p className="text-primary text-md">
@@ -153,7 +153,7 @@ const Projects = () => {
             </div>
             <div className="col-span-6 md:col-span-8">
                 <h3 className="text-xl font-semibold tracking-wide">Sample Project</h3>
-                <p className="text-primary text-md italic mb-5">
+                <p className="text-primary-400 text-md italic mb-5">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 </p>
                 <p className="text-primary text-md">
@@ -169,7 +169,7 @@ const Projects = () => {
         <Link href="https://github.com/reevesplayer" 
         isExternal
         >
-            <h1 className="text-md font-light mb-2">View More →</h1>
+            <h1 className="text-md font-light mb-2 text-primary-400">View More →</h1>
         </Link>
         </div>
     </div>

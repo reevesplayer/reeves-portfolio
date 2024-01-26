@@ -36,7 +36,7 @@ const HomePage = () => {
         <div className="sm:w-3/5 flex flex-col">
           <img src={CodingSVG} alt="Reeves Logo" className="sm:w-1/4 w-3/4 mx-auto rounded-xl" style={{ backgroundColor: '#fbcb64' }} />
           <div className="text-center">
-            <p className=" text-lg mt-10">Hello, I am</p>
+            <p className=" text-lg mt-10 text-primary-400">Hello, I am</p>
             <h1 className="text-primary sm:text-6xl text-5xl font-semibold tracking-wide">Reeves Player</h1>
           </div>
           <p className="text-primary sm:text-2xl text-xl my-5 sm:my-10 text-center sm:mx-20 mx-5 tracking-wider">

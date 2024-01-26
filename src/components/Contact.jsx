@@ -12,21 +12,21 @@ const Contact = () => {
                         type="name"
                         label="Name"
                         variant="bordered"
-                        placeholder="Enter your name"
+                        placeholder="Your name"
                         className=" px-5"
                     /> 
                     <Input
-                        type="name"
-                        label="Name"
+                        type="email"
+                        label="Email"
                         variant="bordered"
-                        placeholder="Enter your name"
+                        placeholder="Your email"
                         className=" px-5"
                     /> 
                 </div>
                 <div className='flex items-center justify-center py-5'>
                     <Textarea 
                         label="Message"
-                        placeholder="Enter your message"
+                        placeholder="Your message"
                         className="px-5 w-full"
                         variant='bordered'
                     />
