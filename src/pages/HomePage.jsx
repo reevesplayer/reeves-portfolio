@@ -10,6 +10,7 @@ import useDarkMode from "use-dark-mode";
 import { Link } from 'react-router-dom';
 
 const HomePage = () => {
+
   const darkMode = useDarkMode(false);
 
   useEffect(() => {

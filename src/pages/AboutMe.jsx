@@ -11,6 +11,7 @@ import Tools from "../components/Tools";
 
 
 const AboutMe = () => {
+  
   const darkMode = useDarkMode(false);
   const backgroundImage = darkMode.value ? backgroundDark : backgroundLight;
   
@@ -40,16 +41,16 @@ const AboutMe = () => {
         </p>
 
         <div className="tracking-wider flex flex-col">
-          <Link href="#about" color="primary" className="text-primary-400">
+          <Link href="#about" color="primary" className="text-primary-400 hover:text-primary hover:font-semibold">
             <h4 className="my-3">01 <span className=" tracking-tight" >━━━</span> ABOUT ME</h4>
           </Link>
-          <Link href="#tools" color="primary" className="text-primary-400">
+          <Link href="#tools" color="primary" className="text-primary-400 hover:text-primary hover:font-semibold">
             <h4 className="my-3">02 <span className=" tracking-tight">━━━</span> TOOLS & PLATFORMS</h4>
           </Link>
-          <Link href="#projects" color="primary" className="text-primary-400">
+          <Link href="#projects" color="primary" className="text-primary-400 hover:text-primary hover:font-semibold">
             <h4 className="my-3">03 <span className=" tracking-tight">━━━</span> PROJECTS</h4>
           </Link>
-          <Link href="#contact" color="primary" className="text-primary-400">
+          <Link href="#contact" color="primary" className="text-primary-400 hover:text-primary hover:font-semibold">
             <h4 className="my-3">04 <span className=" tracking-tight">━━━</span> CONTACT</h4>
           </Link>
         </div>
